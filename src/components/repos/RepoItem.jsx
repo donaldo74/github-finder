@@ -13,14 +13,14 @@ function RepoItem({ repo }) {
 	} = repo;
 
 	return (
-		<div className="mb-2 rounded-md card bg-gray-800 hover:bg-gray-900">
+		<div className="mb-2 rounded-md card bg-gray-600 hover:bg-gray-700">
 			<div className="card-body">
 				<h3 className="mb-2 text-xl font-semibold">
 					<a href={html_url}>
 						<FaLink className="inline mr-1" /> {name}
 					</a>
 				</h3>
-				<p className="mb3">{description}</p>
+				<p className="mb-3">{description}</p>
 				<div>
 					<div className="mr-2 badge badge-info badge-lg">
 						<FaEye className="mr-2" /> {watchers_count}
